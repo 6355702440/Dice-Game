@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    height: 600vh;
+    overflow: hidden;
+}
+
+.main-body{
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    /* border: 2px solid red; */
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute; */
+    background-color: white;
+    margin-top: 40px;
+}
+
+.section-0, .section-1{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 30px; */
+    align-items: center;
+    width: 50%;
+}
+
+
+.active { background-color: #f7f7f7; }
+.active .player-name { font-weight: 30}
+
+.winner{
+    color: chartreuse;
+}
+
+ .player-name{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-top: 50px;
+    position: relative;
+}
+
+.player-score{
+    color: #EB4D4D;
+    font-size: 60px;
+    padding-top: -50px;
+    position: relative;
+    padding: -5px;
+    margin-bottom: 130px;
+    
+}
+
+.current-box{
+    font-size: 0.8em;
+    background-color: #EB4D4D;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    height: 70px; 
+    color: #fff;
+    height: 30px;
+    padding: 10px; 
+    margin-bottom: 40px;
+    display: grid;
+    grid-gap: 5px;
+
+}
+
+i{
+    color: #EB4D4D;
+    font-size: 1.5em;
+    margin-right: 5px;
+    transition: margin 0.3s;
+}
+
+button{
+    border: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 30%;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-size: 0.8em; 
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+    
+} 
+
+button:focus {
+    outline: none;
+}
+
+button:hover{
+    width:180px;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 200px rgb(0,0,0,0.1);
+}
+
+button:hover { font-weight: 500; }
+
+.dice{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 160px;
+    background-color: white;
+    
+}
+.btn-new{
+    top:27px;
+    width: 150px;
+}
+
+.btn-roll{
+    top:315px;
+    width: 150px;
+}
+.btn-hold{
+    top: 350px;
+    width: 130px;
+}
+
+
+
+
